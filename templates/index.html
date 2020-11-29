@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Employees in the company</h1>
+
+    <h2>
+        Register a new employee!
+    </h2>
+    <form method="post" action="/submit">
+        <p>Name: <input type="text" name="first_name"></p>
+        <p>Last name: <input type="text" name="last_name"></p>
+        <p>Email: <input type="email" name="email"></p>
+        <p>IP: <input type="text" name="ip_address"></p>
+        <p><input onclick="submit()" type="submit"></p>
+    </form>
+
+    <table class="table border">
+        <tr>
+            <th>Name</th>
+            <th>Last name</th>
+            <th>Email</th>
+            <th>IP address</th>
+        </tr>
+        {% for employee in employees %}
+        <tr>
+            <td>{{ employee.first_name }}</td>
+            <td>{{ employee.last_name }}</td>
+            <td>{{ employee.email }}</td>
+            <td>{{ employee.ip_address }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

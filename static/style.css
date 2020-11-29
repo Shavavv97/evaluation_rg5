@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #a1d6f6;
+
+}
+
+.border tr{
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+.table{
+    border-collapse:collapse;
+    border-spacing:0;
+    width:50%;
+    display:table
+}
+
+input {
+    background: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+  
