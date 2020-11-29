@@ -31,7 +31,7 @@ def search(id):
 
     return jsonify(employee)
 
-#Rendering a homepage for the employer
+#Rendering a page for the employer
 @app.route('/employees', methods=['GET'])
 def employees():
     employees = []
